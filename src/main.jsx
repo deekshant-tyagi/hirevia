@@ -4,6 +4,7 @@ import "./index.css";
 import App from "./App.jsx";
 import { ClerkProvider } from "@clerk/clerk-react";
 import { dark, neobrutalism, shadesOfPurple } from "@clerk/themes";
+import { SmoothCursor } from "./components/ui/smooth-cursor";
 
 // Import your Publishable Key
 const PUBLISHABLE_KEY = import.meta.env.VITE_CLERK_PUBLISHABLE_KEY;
@@ -14,6 +15,8 @@ if (!PUBLISHABLE_KEY) {
 
 createRoot(document.getElementById("root")).render(
   <StrictMode>
+    <SmoothCursor />
+
     <ClerkProvider
       appearance={{
         baseTheme: shadesOfPurple,
@@ -22,9 +25,6 @@ createRoot(document.getElementById("root")).render(
       afterSignOutUrl="/"
     >
       <App />
-      
     </ClerkProvider>
   </StrictMode>
 );
-
-

@@ -31,7 +31,11 @@ const Header = () => {
       <nav className="py-4 px-8 flex justify-between items-center">
         <Link to="/">
           {/* <img src="/newLogo.jpg" alt="hirrd" className="h-20 w-auto mix-blend-multiply invert" /> */}
-          <img src="/newLogo-Photoroom.png" alt="hirevia" className="h-24 logo" />
+          <img
+            src="/newLogo-Photoroom.png"
+            alt="hirevia"
+            className="h-24 logo"
+          />
         </Link>
         <div className="flex gap-8">
           <SignedOut>
@@ -78,7 +82,7 @@ const Header = () => {
           onClick={handleOverlayClick}
         >
           <SignIn
-            forceRedirectUrl="/onboarding"
+            signUpForceRedirectUrl="/onboarding"
             fallbackRedirectUrl="/onboarding"
           />
         </div>

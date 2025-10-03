@@ -1,0 +1,27 @@
+[
+  {
+    "id": 1,
+    "number": "2K+",
+    "label": "Active Jobs",
+    "description": "Live opportunities"
+  },
+  {
+    "id": 2,
+    "number": "10K+",
+    "label": "Happy Users",
+    "description": "Trust our platform"
+  },
+  {
+    "id": 3,
+    "number": "100+",
+    "label": "Companies",
+    "description": "Hiring actively"
+  },
+  {
+    "id": 4,
+    "number": "95%",
+    "label": "Success Rate",
+    "description": "Job placements"
+  }
+]
+

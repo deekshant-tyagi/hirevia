@@ -1,0 +1,30 @@
+[
+  {
+    "id": 1,
+    "name": "Agent Divyansh",
+    "role": "Software Engineer",
+    "company": "Tech Corp",
+    "image": "🥷",
+    "content": "HireVia helped me land my dream job in just 2 weeks! The platform is intuitive and the job matches were spot-on.",
+    "rating": 5
+  },
+  {
+    "id": 2,
+    "name": "Bouncer Dipanshu ",
+    "role": "Product Manager",
+    "company": "Innovation Labs",
+    "image": "👨‍💼",
+    "content": "As a recruiter, HireVia has streamlined our hiring process. We found amazing talent quickly and efficiently.",
+    "rating": 5
+  },
+  {
+    "id": 3,
+    "name": "Developer Harsh",
+    "role": "UX Designer",
+    "company": "Creative Studio",
+    "image": "👩‍🎨",
+    "content": "The best job portal I've used. Clean interface, great features, and excellent support. Highly recommended!",
+    "rating": 5
+  }
+]
+

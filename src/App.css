@@ -13,6 +13,7 @@
   background-size: 50px 50px;
   pointer-events: none;
   z-index: -1;
+  animation: gridPulse 4s ease-in-out infinite;
 }
 
 .grid-background::before {
@@ -23,4 +24,179 @@
   width: 100%;
   height: 100%;
   background: radial-gradient(circle, transparent, rgba(0, 0, 0, 0.9));
+}
+
+/* Custom animations */
+@keyframes gridPulse {
+  0%, 100% {
+    opacity: 0.5;
+  }
+  50% {
+    opacity: 0.7;
+  }
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+}
+
+@keyframes glow {
+  0%, 100% {
+    box-shadow: 0 0 20px rgba(168, 85, 247, 0.4);
+  }
+  50% {
+    box-shadow: 0 0 40px rgba(168, 85, 247, 0.6);
+  }
+}
+
+@keyframes shimmer {
+  0% {
+    background-position: -1000px 0;
+  }
+  100% {
+    background-position: 1000px 0;
+  }
+}
+
+/* Smooth scroll behavior - Super smooth */
+html {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+html, body {
+  overflow-x: hidden;
+}
+
+
+body {
+  overflow-x: hidden;
+  width: 100%;
+  position: relative;
+}
+
+/* Prevent horizontal scroll */
+* {
+  max-width: 100%;
+}
+
+/* Super smooth scrolling with CSS */
+@media (prefers-reduced-motion: no-preference) {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  * {
+    scroll-behavior: smooth;
+  }
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 2px;
+  display: none;
+
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(15, 23, 42, 0.5);
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(to bottom, #a855f7, #ec4899);
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(to bottom, #9333ea, #db2777);
+}
+
+/* Gradient text animation */
+@keyframes gradientShift {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.gradient-animate {
+  background-size: 200% 200%;
+  animation: gradientShift 3s ease infinite;
+}
+
+/* Enhanced smooth scrolling */
+@supports (scroll-behavior: smooth) {
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+/* Smooth scroll with momentum (for webkit browsers) */
+body {
+  -webkit-overflow-scrolling: touch;
+}
+
+/* Remove any potential horizontal scroll sources */
+.container {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+/* Ensure all sections don't cause overflow */
+section {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+/* Fix for carousel potentially causing overflow */
+.embla {
+  overflow: hidden;
+}
+
+.embla__container {
+  display: flex;
+}
+
+/* Smooth transitions for all interactive elements */
+button, a, .card {
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Add momentum scrolling for better feel */
+* {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Ensure custom cursor works with Clerk modals */
+.cl-modal,
+.cl-modalContent,
+.cl-card,
+.cl-userButtonPopoverCard {
+  cursor: none !important;
+}
+
+.cl-modal *,
+.cl-modalContent *,
+.cl-card *,
+.cl-userButtonPopoverCard * {
+  cursor: none !important;
+}
+
+/* Ensure cursor is visible above all Clerk components */
+.cl-modal {
+  z-index: 50000 !important;
+}
+
+.cl-modalBackdrop {
+  z-index: 49999 !important;
 }

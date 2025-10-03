@@ -1,0 +1,40 @@
+[
+  {
+    "id": 1,
+    "icon": "🎯",
+    "title": "Smart Filters",
+    "description": "Find Jobs that matches to your skills and preferences"
+  },
+  {
+    "id": 2,
+    "icon": "⚡",
+    "title": "Instant Apply",
+    "description": "One-click applications with your saved profile and resume"
+  },
+  {
+    "id": 3,
+    "icon": "🔒",
+    "title": "Secure & Private",
+    "description": "Your data is encrypted and protected with enterprise-grade security"
+  },
+  {
+    "id": 4,
+    "icon": "📊",
+    "title": "Track Progress",
+    "description": "Monitor your applications and get real-time status updates"
+  },
+  {
+    "id": 5,
+    "icon": "💡",
+    "title": "Real Time Status Update",
+    "description": "Get Real Time Status Update of your application."
+    
+  },
+  {
+    "id": 6,
+    "icon": "🚀",
+    "title": "Top Companies",
+    "description": "Access exclusive opportunities from leading employers worldwide"
+  }
+]
+
